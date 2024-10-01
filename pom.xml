@@ -58,7 +58,6 @@
                 <version>3.3.0</version>
                 <configuration>
                     <outputDirectory>${project.build.directory}/dependency</outputDirectory>
-                    <includesScope>compile</includesScope>
                 </configuration>
                 <executions>
                     <execution>
@@ -101,6 +100,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib</classpathPrefix>
                             <mainClass>org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader</mainClass>
                         </manifest>
                         <manifestEntries>
